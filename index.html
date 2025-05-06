@@ -24,7 +24,12 @@
 
 </head>
 <body>
-    
+
+ 
+
+  <button id="scrollToTopBtn" title="Go to top">
+    <i class="fa-solid fa-angle-up text-white"></i>
+  </button>
 
     <!-- top_header -->
     <header>
@@ -62,79 +67,78 @@
 
     <!-- header -->
 
-    <div class="bg_green">
+    <div class="bg_green" id="mainHeader">
       <div class="container-lg px-0">
-          <nav class="navbar  position-relative  navbar-expand-lg bg_green mobile_nav">
+          <nav class="navbar navbar-expand-lg bg_green mobile_nav ">
               <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                  <img src="images/logo (1).png" alt="" srcset="" class=" d-none d-lg-block">
-                  <span class="mean-bar d-lg-none fs-2">Echofy</span>
+                      <img src="images/logo (1).png" alt="" srcset="" class="d-none d-lg-block">
+                      <span class="mean-bar d-lg-none fs-2">Echofy</span>
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fa-solid fa-bars menu_icon"></i>
+                      <i class="fa-solid fa-bars menu_icon"></i>
                   </button>
                   <div class="collapse navbar-collapse mob_menu" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto  main_menu">
-                      <li class="nav-item">
-                      <a class="nav-link active text_white" aria-current="page" href="index.html">Home <i class="fa-solid fa-angle-down text_primary"></i></a>
-                      <ul class="sub_menu">
-                          <li><a href="#" class="text_black">Home 01</a></li>
-                          <li><a href="#" class="text_black">Home 02</a></li>
-                          <li><a href="#" class="text_black">Home 03</a></li>
-                          <li><a href="#" class="text_black">Home 04</a></li>
-                          <li><a href="#" class="text_black">Home 05</a></li>
-                          <li><a href="#" class="text_black">Home 06</a></li>
-                          <li><a href="#" class="text_black">Home 07</a></li>
-                      </ul>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link text_white" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link text_white" href="services.html">Services <i class="fa-solid fa-angle-down text_white"></i></a>
-                      <ul class="sub_menu">
-                          <li><a href="services.html" class="text_black">Service</a></li>
-                          <li><a href="services-details.html" class="text_black">Service details</a></li>
-                      </ul>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link text_white" href="about.html">Pages <i class="fa-solid fa-angle-down text_white"></i></a>
-                      <ul class="sub_menu">
-                          <li><a href="about.html" class="text_black">about</a></li>
-                          <li><a href="services.html" class="text_black">service</a></li>
-                          <li><a href="services-details.html" class="text_black">service details</a></li>
-                          <li><a href="project.html" class="text_black">project</a></li>
-                          <li><a href="project-details.html" class="text_black">project details</a></li>
-                          <li><a href="donation.html" class="text_black">donation</a></li>
-                          <li><a href="donation-details.html" class="text_black">donation details</a></li>
-                          <li><a href="team.html" class="text_black">team</a></li>
-                          <li><a href="faqs.html" class="text_black">faqs</a></li>
-                          <li><a href="testimonail.html" class="text_black">testimonail</a></li>
-                      </ul>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link text_white" href="blog.html">Blog <i class="fa-solid fa-angle-down text_white"></i></a>
-                      <ul class="sub_menu">
-                          <li><a href="blog-grid.html" class="text_black">blog grid</a></li>
-                          <li><a href="blog-list.html" class="text_black">blog list</a></li>
-                          <li><a href="blog-column.html" class="text_black">blog 2column</a></li>
-                          <li><a href="blog-detail.html" class="text_black">blog details</a></li>
-                      </ul>
-                      </li>
-                      <li class="nav-item">
-                      <a class="nav-link text_white" href="contact.html">Contact</a>
-                      </li> 
-                  </ul>
-                  <i class="fa-solid fa-magnifying-glass text_primary me-5 fs-5 my-3 mx-5 d-none d-lg-block"></i>
+                      <ul class="navbar-nav ms-auto main_menu">
+                          <li class="nav-item">
+                              <a class="nav-link active text_white" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text_white" href="about.html">About</a>
+                          </li>
   
-                  <div class="d-flex" role="search">
-                      <button class="btn  get_btn d-none d-lg-block" type="submit">Get A Qoute</button>
-                  </div>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text_white" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="services.html">Service</a></li>
+                                  <li><a class="dropdown-item" href="services-details.html">Service details</a></li>
+                              </ul>
+                          </li>
+  
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text_white" href="about.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pages
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="about.html">about</a></li>
+                                  <li><a class="dropdown-item" href="services.html">service</a></li>
+                                  <li><a class="dropdown-item" href="services-details.html">service details</a></li>
+                                  <li><a class="dropdown-item" href="project.html">project</a></li>
+                                  <li><a class="dropdown-item" href="project-details.html">project details</a></li>
+                                  <li><a class="dropdown-item" href="donation.html">donation</a></li>
+                                  <li><a class="dropdown-item" href="team.html">team</a></li>
+                                  <li><a class="dropdown-item" href="faqs.html">faqs</a></li>
+                                  <li><a class="dropdown-item" href="testimonail.html">testimonail</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text_white" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Blog
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="blog-grid.html">blog grid</a></li>
+                                  <li><a class="dropdown-item" href="blog-list.html">blog list</a></li>
+                                  <li><a class="dropdown-item" href="blog-column.html">blog 2column</a></li>
+                                  <li><a class="dropdown-item" href="blog-detail.html">blog details</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text_white" href="contact.html">Contact</a>
+                          </li>
+                      </ul>
+                      <i class="fa-solid fa-magnifying-glass text_primary me-3 fs-5 my-3 mx-lg-5 d-none d-lg-block"></i>
+  
+                      <div class="d-flex" role="search">
+                          <button class="btn get_btn d-none d-lg-block" type="submit">Get A Quote</button>
+                      </div>
                   </div>
               </div>
           </nav>
       </div>
     </div>
+  
 
     <!-- end header -->
 
@@ -160,7 +164,7 @@
               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
                 <div class="echonfy-button d-flex flex-wrap">
                   <a href="about.html" class="let_btn">Let's Talk</a>
-                  <a href="about.html" class="read_more_btn">Read More</a>
+                  <!-- <a href="about.html" class="read_more_btn">Read More</a> -->
                 </div> 
               </div>  
             </div>
@@ -185,9 +189,9 @@
                 <p class="text-white">Professionally optimize interdependent intellectual interoperable connect best practices. Progressively  fabricate done</p>
               </div>
               <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
-                <div class="echonfy-button">
+                <div class="echonfy-button d-flex flex-wrap">
                   <a href="about.html" class="let_btn">Let's Talk</a>
-                  <a href="about.html" class="read_more_btn">Read More</a>
+                  <!-- <a href="about.html" class="read_more_btn">Read More</a> -->
                 </div> 
               </div>  
             </div>
@@ -526,8 +530,11 @@
                           <p class="fs-6 our_skill mb-3">Competently cultivate worldwide e-tailers through principle-centered value  professionally engineer high-payoff deliverables without exceptional processes.  Rapidiously network cost effective vortals
                           </p>
                     </div>
-                        <a href="contact.html" class="btn btn11 mt-3"><span>Contact us</span><img src="images/button-shape.png" alt="" srcset="" class="ms-2"><img src="images/button-shape-2.png" alt="" srcset="" class="leap"></a>  
+                    <div class="btn_contact">
+                        <a href="contact.html" class="btn btn11 mt-3 mb-3"><span>Contact us</span><img src="images/button-shape.png" alt="" srcset="" class="ms-2"><img src="images/button-shape-2.png" alt="" srcset="" class="leap"></a> 
+                    </div> 
                         <img src="images/about-shape-2.png" alt="" srcset="" class="arrow1">
+                      
                         
                   </div>
                   
@@ -717,7 +724,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="owl-carousel owl-theme" id="testimonial2">   
-                      <div class="testi_box ">
+                      <div class="testi_box mb-5 mt-4">
                           <div class="testi_qute position-relative">
                               <img src="images/testi-quote.png" alt="" srcset="" class="w-auto">
                           </div>
@@ -743,7 +750,7 @@
                           </p>
                           <h5 class="text_primary">Supports</h5>
                       </div>
-                      <div class="testi_box ">
+                      <div class="testi_box mb-5 mt-4">
                         <div class="testi_qute position-relative">
                             <img src="images/testi-quote.png" alt="" srcset="" class="w-auto">
                         </div>
@@ -782,7 +789,7 @@
 
     <!-- brand -->
 
-    <div class="brand mt-5">
+    <div class="brand mt-5 d-md-none d-lg-block d-sm-none">
         <div class="container">
           <div class="brand_leap position-relative">
             <img src="images/brand-shape.png" alt="">
@@ -937,95 +944,105 @@
      
 
     <!-- blog -->
-    <div class="blog_area">
-      <div class="container">
-          <div class="row">
-            
-              <div class="col-lg-9 mt-5">
-                  <div class="about_right d-flex flex-wrap">
-                    <div class="section_title mt-5">
-                      <h4 class="text_primary text-uppercase mb-3"><img src="images/section-shape.png" alt="" srcset="" class="me-3 mb-1">Latest Blog</h4>
-                      <h1 class="fw-bold mb-4">Building a Greener Future <br>
-                        Together Forever</h1>
-                    
-                    </div>
 
-                    
-                  
-                  
-                  </div>    
-              </div>
-              <div class="col-lg-3 mt-lg-5 mt-md-auto">
-                <div class="view_blog position-relative mt-lg-5">
-                  <a href="blog_grid.html" class="btn btn11 mt-lg-5"><span>View All Blog</span><img src="images/button-shape.png" alt="" srcset="" class="ms-2"><img src="images/button-shape-2.png" alt="" srcset="" class="leap"></a> 
+    <div class="blog_area py-5">
+      <div class="container">
+        <div class="row">
+                
+          <div class="col-lg-9 mt-5">
+              <div class="about_right d-flex flex-wrap">
+                <div class="section_title mt-5">
+                  <h4 class="text_primary text-uppercase mb-3"><img src="images/section-shape.png" alt="" srcset="" class="me-3 mb-1">Latest Blog</h4>
+                  <h1 class="fw-bold mb-4">Building a Greener Future <br>
+                    Together Forever</h1>
                 </div>
-              </div>
-            
+              </div>    
           </div>
+          <div class="col-lg-3 mt-lg-5 mt-md-auto">
+            <div class="view_blog position-relative mt-lg-5">
+              <a href="blog_grid.html" class="btn btn11 mt-lg-5"><span>View All Blog</span><img src="images/button-shape.png" alt="" srcset="" class="ms-2"><img src="images/button-shape-2.png" alt="" srcset="" class="leap"></a> 
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+        
+          <div class="col">
+            <div class="blog_box">
+              <div class="blog_img overflow-hidden">
+                <img src="images/blog-1.jpg" alt="Recycling Tips" class="img-fluid">
+              </div>
+              <div class="blog_content">
+                <a href="blog_detail.html" class="fs-5 text-dark fw-bold d-block lh-base">Top 10 Recycling tips for Environment</a>
+                <p class="text-secondary mt-3">Competently cultivate worldwide to e-tailers professionally engineer high.</p>
+              </div>
+
+              <div class="blog_author d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="blog_name d-flex align-items-center">
+                  <span class="text-white  fw-medium rounded-circle d-inline-flex justify-content-center align-items-center" 
+                        >J</span>
+                  <a href="blog-grid.html" class="text-dark"><h6 class="mb-0 ms-1 fw-bold" >John D. Alexon</h6></a>
+                </div>
+                <a href="blog-grid.html" class="text-dark ms-auto"><i class="fa-solid fa-arrow-right fs-5"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="blog_box">
+              <div class="blog_img overflow-hidden">
+                <img src="images/blog-2.jpg" alt="Individual Impact" class="img-fluid">
+              </div>
+              <div class="blog_content">
+                <a href="blog_detail.html" class="fs-5 text-dark fw-bold d-block lh-base">How Every Individual Can Make a Difference</a>
+                <p class="text-secondary mt-3">Competently cultivate worldwide to e-tailers professionally engineer high.</p>
+              </div>
+
+              <div class="blog_author d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="blog_name d-flex align-items-center">
+                  <span class="text-white  fw-medium rounded-circle d-inline-flex justify-content-center align-items-center" 
+                        >A</span>
+                  <a href="blog-grid.html" class="text-dark"><h6 class="mb-0 ms-1 fw-bold" >Anjelina Watson</h6></a>
+                </div>
+                <a href="blog-grid.html" class="text-dark ms-auto"><i class="fa-solid fa-arrow-right fs-5"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="blog_box">
+              <div class="blog_img overflow-hidden">
+                <img src="images/blog-3.jpg" alt="Renewable Innovations" class="img-fluid">
+              </div>
+              <div class="blog_content">
+                <a href="blog_detail.html" class="fs-5 text-dark fw-bold d-block lh-base">Innovations in Renewable Energy Technology</a>
+                <p class="text-secondary mt-3">Competently cultivate worldwide to e-tailers professionally engineer high.</p>
+              </div>
+
+              <div class="blog_author d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="blog_name d-flex align-items-center">
+                  <span class="text-white  fw-medium rounded-circle d-inline-flex justify-content-center align-items-center" 
+                        >D</span>
+                  <a href="blog-grid.html" class="text-dark"><h6 class="mb-0 ms-1 fw-bold" >David Watson</h6></a>
+                </div>
+                <a href="blog-grid.html" class="text-dark ms-auto"><i class="fa-solid fa-arrow-right fs-5"></i></a>
+              </div>
+              
+            </div>
+          </div>
+
           
-          <div class="row">
-              <div class="col-lg-4 col-md-6 mt-5">
-                  <div class="blog_box">
-                      <div class="blog_img overflow-hidden">
-                        <img src="images/blog-1.jpg" alt="" srcset="">
-                      </div>
-                      <div class="blog_content">
-                          <a href="blog_detail.html" class="fs-4 text-dark fw-bold">Top 10 Recycling tips for Environment</a>
-                          <p class="text_grey mt-3">Competently cultivate worldwide to e-tailers professionally engineer high</p>
-                      </div>
-                      <div class="blog_author d-flex">
-                          <div class="blog_name">
-                              <h6 class="fs-6 fw-bold"><span class="fs-5 text_white">J</span>John D. Alexon </h6>
-                          </div>
-                          <div class="blog_icon mt-2">
-                            <a href="#" class="text-dark"><i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                      </div>
-                  </div>   
-              </div>
-              <div class="col-lg-4 col-md-5 mt-5">
-                <div class="blog_box">
-                  <div class="blog_img overflow-hidden">
-                    <img src="images/blog-2.jpg" alt="" srcset="">
-                  </div>
-                  <div class="blog_content">
-                      <a href="blog_detail.html" class="fs-4 text-dark fw-bold">How Every Individual Can Make a Difference</a>
-                      <p class="text_grey mt-3">Competently cultivate worldwide to e-tailers professionally engineer high</p>
-                  </div>
-                  <div class="blog_author d-flex">
-                      <div class="blog_name">
-                          <h6 class="fs-6 fw-bold"><span class="fs-5 text_white">A</span>AnjelinaWatson </h6>
-                      </div>
-                      <div class="blog_icon mt-2">
-                        <a href="#" class="text-dark"><i class="fa-solid fa-arrow-right"></i></a>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mt-5">
-                <div class="blog_box">
-                  <div class="blog_img overflow-hidden">
-                    <img src="images/blog-3.jpg" alt="" srcset="">
-                  </div>
-                  <div class="blog_content">
-                      <a href="blog_detail.html" class="fs-4 text-dark fw-bold">Innovations in Renewable Energy Technology</a>
-                      <p class="text_grey mt-3">Competently cultivate worldwide to e-tailers professionally engineer high</p>
-                  </div>
-                  <div class="blog_author d-flex">
-                      <div class="blog_name">
-                          <h6 class="fs-6 fw-bold"><span class="fs-5 text_white">D</span>David Watson </h6>
-                      </div>
-                      <div class="blog_icon mt-2">
-                        <a href="#" class="text-dark"><i class="fa-solid fa-arrow-right"></i></a>
-                      </div>
-                  </div>
-                </div>
-              </div>
-          </div>
+        </div>
+
+        
+        
       </div>
     </div>
 
-    <!-- end blog -->
+  <!-- end blog -->
 
 
     <footer>
@@ -1124,7 +1141,7 @@
               <div class="container">
                   <div class="row border_top">
                       <div class="col-md-12 text-center">
-                          <h4 class="fs-6 text_white">© Copyrights 2024 Echofy All rights reserved by  <a href="#" class="text_primary"> Dream IT.</a></h4>
+                          <h4 class="fs-6 text_white">© Copyrights 2025 Echofy All Designed by Isha Dhameliya  <a href="#" class="text_primary"> Dream IT.</a></h4>
                       </div>
                   </div>
               </div>
@@ -1135,8 +1152,9 @@
 
     
 
-
+    
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.js"></script>

@@ -10,7 +10,6 @@ $(document).ready(function(){
 
     var owl = $('#slider');
     owl.owlCarousel();
-    // Listen to owl events:
     owl.on('changed.owl.carousel', function(event) {
         new WOW().init();
     })
@@ -30,16 +29,13 @@ $(document).ready(function(){
             margin:0,  
             responsive: {
                 0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
+                  items: 1
                 },
                 768: {
-                    items: 2
+                  items: 2
                 },
-                1000:{
-                    items:3
+                992: {
+                  items: 3
                 }
             }
     });
@@ -137,6 +133,31 @@ $(document).ready(function(){
             }
         },
     });
+
+
+    // scroll to top
+
+    $('#scrollToTopBtn').hide();
+    $('#scrollToTopBtn').click(function(){
+        $('html,body').animate({scrollTop:0},300)
+    })
+
+
+    $(window).scroll(function () {
+        var scrollPos = $(window).scrollTop();
+        if (scrollPos > 150) {
+            $('#mainHeader').addClass('fixed_header');
+            $('body').addClass('fixed-header-padding');
+            $('#scrollToTopBtn').fadeIn();
+        } else {
+            $('#mainHeader').removeClass('fixed_header');
+            $('body').removeClass('fixed-header-padding');
+            $('#scrollToTopBtn').fadeOut();
+        }
+    });
+    
+
+    
 
     
   });
