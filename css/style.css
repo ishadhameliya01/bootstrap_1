@@ -94,6 +94,8 @@ spacer{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+
 .fixed_header {
     position: fixed;
     top: 0;

@@ -176,6 +176,13 @@
     .accordion-header button{
         font-size: 15px !important;
     }
+
+    .bg_green{
+        background-color: var(--green);
+    }
+    .main_menu .nav-item .nav-link {
+        background-color: var(--darkgreen);
+    }
    
 }
 
@@ -283,6 +290,13 @@
     }
     .accordion-header button{
         font-size: 15px !important;
+    }
+
+    .bg_green{
+        background-color: var(--green);
+    }
+    .main_menu .nav-item .nav-link {
+        background-color: var(--darkgreen);
     }
     
     
